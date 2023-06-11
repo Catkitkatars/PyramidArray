@@ -19,5 +19,14 @@ function pyramid(int $n) {
     return $result;   
 }
 
-
 var_dump(pyramid(2));
+
+// BEST PRACTICES
+// 
+// function pyramid($n) {
+//   $pyramid = [];
+//   for ($i = 1; $i <= $n; $i += 1) {
+//     $pyramid[] = array_fill(0, $i, 1);
+//   }
+//   return $pyramid;
+// }
